@@ -15,7 +15,7 @@
   @@include("partials/modals.html")
 
   <!-- NAVIGATION
-    ================================================== -->
+    ================================================== 
   @@if (navPosition == 'sidenav' || navPosition == 'combo' || demoMode) {
   @@if (sidebarSize == '' || demoMode) {
   @@include("partials/sidebar.html", {
@@ -38,8 +38,33 @@
   "subcategory": "project",
   "page": "index.html"
   })
-  }
-
+  } -->
+  
+  <!-- NAVIGATION Orginial Dashkit Menu Code d168 
+    ================================================== -->
+    @@if (navPosition == 'sidenav' || navPosition == 'combo' || demoMode) {
+    @@if (sidebarSize == 'base' || demoMode) {
+    @@include("partials/sidebar.html", {
+    "category": "dashboards",
+    "subcategory": "",
+    "page": "index.html"
+    })
+    }
+    @@if (sidebarSize == 'small' || demoMode) {
+    @@include("partials/sidebar-sm.html", {
+    "category": "dashboards",
+    "subcategory": "",
+    "page": "index.html"
+    })
+    }
+    }
+    @@if (navPosition == 'topnav' || demoMode) {
+    @@include("partials/topnav.html", {
+    "category": "dashboards",
+    "subcategory": "",
+    "page": "index.html"
+    })
+    }
 
   <!-- MAIN CONTENT
     ================================================== -->
@@ -60,8 +85,9 @@
       <img src="assets/img/covers/aircrft-exponential-innovation-platform-double-skinny-rainbow.png" class="header-img-top" alt="aircrft-exponential-innovation-platform-double-skinny-rainbow"> 
       <img src="assets/img/covers/aircrft-open-source-startup-builder.png" class="header-img-top" alt="aircrft-open-source-startup-builder"> 
       <img src="assets/img/covers/aircrft-be-the-ceo-of-you.png" class="header-img-top" alt="aircrft-be-the-ceo-of-you"> 
-      <img src="assets/img/covers/aircrft-startup-market-network-cover.png" class="header-img-top" alt="aircrft-startup-market-network-cover.png"> -->
-      <img src="assets/img/covers/aircrft-e-i-h-cover-d181.png" class="header-img-top" alt="aircrft-exponetial-innovation-hub"> 
+      <img src="assets/img/covers/aircrft-startup-market-network-cover.png" class="header-img-top" alt="aircrft-startup-market-network-cover.png"> 
+      <img src="assets/img/covers/aircrft-e-i-h-cover-d181.png" class="header-img-top" alt="aircrft-exponetial-innovation-hub"> -->
+      <img src="assets/img/covers/aircrft-cover-puts-the-power-on-the-internet-in-your-startup.png" class="header-img-top" alt="aircrft-aircrft-cover-puts-the-power-on-the-internet-in-your-startup">
       
       <div class="@@if(navPosition=='sidenav'||navPosition=='combo'){container-fluid}@@if(navPosition=='topnav'){container}">
 
